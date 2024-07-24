@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test
+            name="chrometest">
+        <parameter name="bname" value="Chrome"></parameter>
+        <classes>
+            <class name="TestNGdemos.seleniumgrid.remoteparalleltest">
+                <!--                <methods>-->
+                <!--                    <include name="crossBrowseTest"/>-->
+                <!--                </methods>-->
+            </class>
+        </classes>
+    </test>
+    <test
+            name="firefoxtest">
+        <parameter name="bname" value="FireFox"></parameter>
+        <classes>
+            <class name="TestNGdemos.seleniumgrid.remoteparalleltest">
+            </class>
+        </classes>
+    </test>
+    <test
+            name="seleniumtest">
+        <parameter name="bname" value="Edge"></parameter>
+        <classes>
+            <class name="TestNGdemos.seleniumgrid.remoteparalleltest">
+            </class>
+        </classes>
+    </test>
+</suite>
